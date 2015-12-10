@@ -39,11 +39,8 @@ public class TunerFragment extends PreferenceFragment {
     private static final String TAG = "TunerFragment";
 
     private static final String KEY_QS_TUNER = "qs_tuner";
-<<<<<<< HEAD
-    private static final String KEY_BATTERY_PCT = "battery_pct";
-=======
+
     private static final String KEY_DEMO_MODE = "demo_mode";
->>>>>>> 7e97d0c... SystemUI : Make battery percentage configurable
 
     public static final String SETTING_SEEN_TUNER_WARNING = "seen_tuner_warning";
 
@@ -65,9 +62,7 @@ public class TunerFragment extends PreferenceFragment {
                 return true;
             }
         });
-<<<<<<< HEAD
-        mBatteryPct = (SwitchPreference) findPreference(KEY_BATTERY_PCT);
-=======
+
         findPreference(KEY_DEMO_MODE).setOnPreferenceClickListener(new OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
@@ -78,7 +73,7 @@ public class TunerFragment extends PreferenceFragment {
                 return true;
             }
         });
->>>>>>> 7e97d0c... SystemUI : Make battery percentage configurable
+
         if (Settings.Secure.getInt(getContext().getContentResolver(), SETTING_SEEN_TUNER_WARNING,
                 0) == 0) {
             new AlertDialog.Builder(getContext())
