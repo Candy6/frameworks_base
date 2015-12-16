@@ -805,7 +805,8 @@ interface ITelephony {
      * @param operatorInfo the operator to attach to.
      * @return true if the request suceeded.
      */
-    boolean setNetworkSelectionModeManual(int subId, in OperatorInfo operator);
+    boolean setNetworkSelectionModeManual(int subId, in OperatorInfo operator,
+            boolean persistSelection);
 
     /**
      * Set the preferred network type.
@@ -1056,13 +1057,13 @@ interface ITelephony {
      * Returns the Status of Wi-Fi Calling
      *@hide
      */
-    boolean isWifiCallingEnabled();
+    boolean isWifiCallingAvailable();
 
      /**
      * Returns the Status of Volte
      *@hide
      */
-    boolean isVolteEnabled();
+    boolean isVolteAvailable();
 
     /**
       * Returns the unique device ID of phone, for example, the IMEI for
