@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 Chroma
+     Copyright (C) 2015 CandyRoms
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -39,5 +39,9 @@
     
      <!-- Slimseekbar -->
     <string name="default_string">Default</string>
+
+    <string name="permlab_preventpower">Override the power key</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_preventpower">Allows an app to override the power key</string>
 
 </resources>
